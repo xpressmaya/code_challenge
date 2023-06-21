@@ -1,5 +1,5 @@
 class TicketsController < ApplicationController
-  before_action :set_ticket, only %i[show]
+  before_action :set_ticket, only: :show
 
   def index
     @tickets = Ticket.all
